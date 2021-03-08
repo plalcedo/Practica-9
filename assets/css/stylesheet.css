@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Hind+Siliguri:wght@300&family=Mukta:wght@300&display=swap');
+:root {
+    --verdeOscuro: #386641;
+    --verdeMedio: #6A994E;
+    --verdeClaro: #A7C957;
+    --crema: #F2E8CF;
+    --rojo: #BC4749;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+
+/* Etiquetas */
+
+h1 {
+    font-family: 'Akaya Telivigala', cursive;
+    margin-right: 20px;
+}
+
+h2 {
+    font-family: 'Mukta', sans-serif;
+}
+
+body {
+    background-color: var(--crema);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    height: auto;
+    background-color: var(--verdeOscuro);
+    display: flex;
+    color: white;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    width: auto;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    transition: 0.5s;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+nav a:hover {
+    background-color: var(--verdeClaro);
+    color: var(--verdeOscuro);
+    text-decoration: none;
+}
+
+
+/* Clases */
+
+.tituloPpal {
+    font-size: 50px;
+    color: white;
+    background-color: var(--verdeOscuro);
+    padding: 25px;
+    border: 8px var(--rojo) solid;
+    border-radius: 50px;
+}
+
+.carrusel {
+    width: 70%;
+    height: auto;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: white;
+    background-color: var(--rojo);
+}
+
+
+/* Ids */
+
+#inicio {
+    width: 70%;
+    height: 60vh;
+    display: flex;
+    background-position: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    margin: auto;
+}
+
+#botonesInicio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#botonesInicio a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--verdeMedio);
+    border-radius: 10px;
+    width: 20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#botonesInicio a:hover {
+    background-color: var(--verdeClaro);
+    transition: 0.5s;
+}
